@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posada San Jerónimo - Demo</title>
+    <link rel="icon" type="image/png" href="./src/logo/logo_hotelsj.svg" />
+    <link rel="stylesheet" href="./src/style.css">
+  </head>
+  <body class="bg-stone-50 text-stone-800">
+
+    <nav class="bg-white p-4 shadow-md sticky top-0 z-50">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="text-2xl md:text-3xl font-bold text-amber-900 tracking-widest brand-font">
+          SAN JERÓNIMO
+          <span class="block text-xs text-stone-500 font-sans tracking-normal text-center">POSADA HOTEL</span>
+        </div>
+
+        <div class="hidden lg:flex items-center gap-8">
+          <ul class="flex gap-8 text-stone-600 font-medium text-sm tracking-widest">
+            <li><a href="#habitaciones" class="hover:text-amber-800 transition-colors">HABITACIONES</a></li>
+            <li><a href="#ubicacion" class="hover:text-amber-800 transition-colors">UBICACIÓN</a></li>
+            <li><a href="#contacto" class="hover:text-amber-800 transition-colors">CONTACTO</a></li>
+          </ul>
+          <a href="https://wa.me/522281403710" target="_blank" class="bg-amber-900 text-white px-6 py-2 rounded shadow hover:bg-amber-800 transition-all border border-amber-900">
+            Reservar Ahora
+          </a>
+        </div>
+
+        <button id="mobile-menu-btn" class="lg:hidden text-amber-900 focus:outline-none">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div id="mobile-menu" class="hidden lg:hidden absolute top-full left-0 w-full bg-stone-100 border-t border-stone-200 shadow-xl flex flex-col items-center gap-6 py-8">
+        <a href="#habitaciones" class="text-stone-700 title-font text-xl hover:text-amber-900">Habitaciones</a>
+        <a href="#ubicacion" class="text-stone-700 title-font text-xl hover:text-amber-900">Ubicación</a>
+        <a href="https://wa.me/522281403710" target="_blank" class="bg-amber-900 text-white px-10 py-3 rounded text-lg shadow-md">
+          Reservar WhatsApp
+        </a>
+      </div>
+    </nav>
+
+    <header class="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <img src="./src/images_hotel/fachada.png" class="absolute w-full h-full object-cover brightness-50">
+      
+      <div class="relative z-10 text-center px-4">
+        <p class="text-stone-200 text-lg md:text-xl mb-2 tracking-widest uppercase">Bienvenido a <strong>Coatepec</strong></p>
+        <h1 class="text-5xl md:text-7xl text-white font-bold mb-6 drop-shadow-lg title-font">Descanso y Tradición</h1>
+        <a href="#habitaciones" class="inline-block border-2 rounded-2xl border-white text-white px-8 py-3 hover:bg-amber-900 hover:text-stone-50 transition duration-300 uppercase tracking-widest text-sm font-bold">
+          Ver Habitaciones
+        </a>
+      </div>
+    </header>
+
+    <section id="habitaciones" class="py-16 px-6 bg-stone-100">
+      <div class="container mx-auto">
+        <div class="text-center mb-12">
+          <h3 class="text-3xl md:text-4xl text-stone-800 font-bold mb-4 title-font">Nuestras Habitaciones</h3>
+          <div class="w-24 h-1 bg-amber-800 mx-auto"></div>
+          <p class="text-stone-600 mt-4 max-w-xl mx-auto">Espacios diseñados para tu confort, manteniendo la arquitectura colonial de nuestra casona.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <article class="bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 group">
+            <div class="overflow-hidden h-64">
+              <img src="./src/images_hotel/habitacion3.jpeg" alt="Habitación Sencilla" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            </div>
+            <div class="p-6 border-b-4 border-amber-900">
+              <h4 class="text-2xl text-stone-800 font-bold title-font">Estándar Sencilla</h4>
+              <p class="text-stone-500 text-sm italic mb-4">Perfecta para viajeros solos</p>
+              <div class="flex gap-4 text-stone-600 text-sm mb-6 border-t border-stone-200 pt-4">
+                <span>🛏️ Cama Queen</span><span>📶 WiFi</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <div><span class="text-xs text-stone-500 block">Desde</span><span class="text-xl font-bold text-amber-900">$650 MXN</span></div>
+                <a href="https://wa.me/522281403710?text=Hola, me interesa reservar la Habitación Sencilla" target="_blank" class="bg-stone-800 text-white px-4 py-2 text-sm uppercase tracking-wide hover:bg-amber-900 transition">Reservar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 group">
+            <div class="overflow-hidden h-64">
+              <img src="./src/images_hotel/habitacion2.jpeg" alt="Habitación Doble" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            </div>
+            <div class="p-6 border-b-4 border-amber-900">
+              <h4 class="text-2xl text-stone-800 font-bold title-font">Doble Familiar</h4>
+              <p class="text-stone-500 text-sm italic mb-4">Para compartir en familia</p>
+              <div class="flex gap-4 text-stone-600 text-sm mb-6 border-t border-stone-200 pt-4">
+                <span>🛏️ 2 Matrimoniales</span><span>📺 TV Cable</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <div><span class="text-xs text-stone-500 block">Desde</span><span class="text-xl font-bold text-amber-900">$950 MXN</span></div>
+                <a href="https://wa.me/522281403710?text=Hola, me interesa reservar la Habitación Doble" target="_blank" class="bg-stone-800 text-white px-4 py-2 text-sm uppercase tracking-wide hover:bg-amber-900 transition">Reservar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 group">
+            <div class="overflow-hidden h-64">
+              <img src="./src/images_hotel/habitacion1.avif" alt="Suite" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            </div>
+            <div class="p-6 border-b-4 border-amber-900 relative">
+               <div class="absolute top-0 right-0 bg-amber-900 text-white text-xs px-3 py-1 font-bold">FAVORITA</div>
+              <h4 class="text-2xl text-stone-800 font-bold title-font">Junior Suite</h4>
+              <p class="text-stone-500 text-sm italic mb-4">Espacio amplio con balcón</p>
+              <div class="flex gap-4 text-stone-600 text-sm mb-6 border-t border-stone-200 pt-4">
+                <span>👑 King Size</span><span>☕ Cafetera</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <div><span class="text-xs text-stone-500 block">Desde</span><span class="text-xl font-bold text-amber-900">$1,200 MXN</span></div>
+                <a href="https://wa.me/522281403710?text=Hola, me interesa reservar la Junior Suite" target="_blank" class="bg-stone-800 text-white px-4 py-2 text-sm uppercase tracking-wide hover:bg-amber-900 transition">Reservar</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="py-16 px-6 bg-stone-100">
+      <div class="container mx-auto">
+        <div class="text-center mb-12">
+          <h3 class="text-3xl md:text-4xl text-stone-800 font-bold mb-4 title-font">Para ti y tu familia</h3>
+          <div class="w-24 h-1 bg-amber-800 mx-auto"></div>
+          <p class="text-stone-600 mt-4 max-w-xl mx-auto">Muy cerca de los lugares más emblemáticos de Coatepec, desayunos deliciosos y espacios para pasar momentos agradables en compañia de tu familia</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <article class="bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 group">
+             <div class="overflow-hidden h-64">
+                <img src="./src/images_hotel/desayuno.jpeg" alt="Desayuno" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+              </div>
+              <div class="p-6"> <h4 class="text-2xl text-stone-800 font-bold title-font mb-2">Desayuno Regional</h4>
+                <p class="text-stone-500 text-sm">Disfruta de nuestros platillos típicos preparados al momento.</p>
+              </div>
+          </article>
+
+          <article class="bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 group">
+             <div class="overflow-hidden h-64">
+                <img src="./src/images_hotel/alberca.jpeg" alt="Piscina" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+              </div>
+              <div class="p-6 "> <h4 class="text-2xl text-stone-800 font-bold title-font mb-2">Piscina</h4>
+                <p class="text-stone-500 text-sm">Relájate y disfruta del sol en nuestra área privada.</p>
+              </div>
+          </article>
+
+          <article class="bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 group">
+             <div class="overflow-hidden h-64">
+                <img src="./src/images_hotel/parque.png" alt="Desayuno" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+              </div>
+              <div class="p-6"> <h4 class="text-2xl text-stone-800 font-bold title-font mb-2">Excelente Ubicación</h4>
+                <p class="text-stone-500 text-sm">A pasos del Parque Hidalgo y el Museo del Café.</p>
+              </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-stone-900 text-stone-400 pt-16 pb-8 border-t-4 border-amber-900">
+  <div class="container mx-auto px-6">
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+      
+      <div>
+        <h4 class="text-2xl text-white title-font mb-6 tracking-wider">SAN JERÓNIMO</h4>
+        <p class="text-sm leading-relaxed mb-6">
+          Vive la experiencia auténtica de Coatepec en nuestra casona colonial. Tradición, descanso y el mejor café de la región.
+        </p>
+        <span class="inline-block bg-amber-900 text-white text-xs px-3 py-1 rounded font-bold tracking-widest">
+          COATEPEC PUEBLO MÁGICO
+        </span>
+      </div>
+
+      <div>
+        <h4 class="text-white font-bold mb-6 uppercase tracking-widest text-sm">Explora</h4>
+        <ul class="space-y-4 text-sm">
+          <li><a href="#habitaciones" class="hover:text-amber-500 transition-colors">Habitaciones & Suites</a></li>
+          <li><a href="#" class="hover:text-amber-500 transition-colors">Nuestros Servicios</a></li>
+          <li><a href="#" class="hover:text-amber-500 transition-colors">Galería de Fotos</a></li>
+          <li><a href="#" class="hover:text-amber-500 transition-colors">Atracciones Locales</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-white font-bold mb-6 uppercase tracking-widest text-sm">Contacto</h4>
+        <ul class="space-y-4 text-sm">
+          <li class="flex items-start gap-3">
+            <span class="text-amber-600">📍</span>
+            <span>Calle Real #12, Centro Histórico,<br>Coatepec, Veracruz.</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="text-amber-600">📞</span>
+            <a href="tel:+522281234567" class="hover:text-white">228 123 4567</a>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="text-amber-600">📧</span>
+            <a href="mailto:reservas@sanjeronimo.com" class="hover:text-white">reservas@sanjeronimo.com</a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-white font-bold mb-6 uppercase tracking-widest text-sm">Información</h4>
+        <ul class="space-y-4 text-sm mb-6">
+          <li><a href="#" class="hover:text-white">Políticas de Cancelación</a></li>
+          <li><a href="#" class="hover:text-white">Aviso de Privacidad</a></li>
+        </ul>
+        
+        <h4 class="text-white font-bold mb-4 uppercase tracking-widest text-xs">Aceptamos</h4>
+        <div class="flex gap-2 opacity-60">
+          <div class="w-10 h-6 bg-white rounded flex items-center justify-center text-xs font-bold text-blue-800">VISA</div>
+          <div class="w-10 h-6 bg-white rounded flex items-center justify-center text-xs font-bold text-red-600">MC</div>
+          <div class="w-10 h-6 bg-white rounded flex items-center justify-center text-xs font-bold text-blue-500">AMEX</div>
+          <div class="w-10 h-6 bg-white rounded flex items-center justify-center text-xs font-bold text-green-600">$$$</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="border-t border-stone-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-stone-500">
+      <p>&copy; 2025 Posada San Jerónimo. Todos los derechos reservados.</p>
+      
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-white transition-colors">Facebook</a>
+        <a href="#" class="hover:text-white transition-colors">Instagram</a>
+        <a href="#" class="hover:text-white transition-colors">TripAdvisor</a>
+      </div>
+    </div>
+    
+    <div class="mt-8 text-center">
+      <div class="bg-yellow-600 text-black text-xs font-bold px-4 py-2 inline-block rounded shadow-lg">
+        ⚠️ SITIO DEMO PARA PROPUESTA COMERCIAL - DESARROLLADO POR CAMILO R.
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

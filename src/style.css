@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Nuno';
+  src: url(./fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
+}
+
+@font-face {
+  font-family: 'Radley';
+  src: url(./fonts/Radley-Regular.ttf);
+}
+
+/* Aplicamos las fuentes base */
+body {
+  font-family: 'Nuno';
+}
+
+/* Clase de utilidad para títulos elegantes */
+.title-font, h1, h2, h3, h4 {
+  font-family: 'Radley';
+}
+
+/* Clase de utilidad para el logo/marca */
+.brand-font {
+  font-family: 'Radley';
+}
